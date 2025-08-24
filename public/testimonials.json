@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "text": "Our family received warm clothes last winter through DonateWear. It was truly a blessing for our children.",
+    "name": "Lucy",
+    "role": "Recipient",
+    "image": "https://i.pravatar.cc/150?img=0.1"
+  },
+  {
+    "id": 2,
+    "text": "Donating was simple, and knowing it helped real families made me feel proud.",
+    "name": "Sarah J.",
+    "role": "Donor",
+    "image": "https://i.pravatar.cc/150?img=2"
+  },
+  {
+    "id": 3,
+    "text": "Sorting and distributing clothes with DonateWear gave me purpose.",
+    "name": "Ahmed K.",
+    "role": "Volunteer",
+    "image": "https://i.pravatar.cc/150?img=3"
+  },
+  {
+    "id": 4,
+    "text": "I never thought a simple sweater could mean so much until I received one.",
+    "name": "Fatima R.",
+    "role": "Recipient",
+    "image": "https://i.pravatar.cc/150?img=4"
+  },
+  {
+    "id": 5,
+    "text": "Every donation is used with care. I trust DonateWear completely.",
+    "name": "John D.",
+    "role": "Donor",
+    "image": "https://i.pravatar.cc/150?img=5"
+  },
+  {
+    "id": 6,
+    "text": "Helping organize donation drives connected me to my community.",
+    "name": "Maria S.",
+    "role": "Volunteer",
+    "image": "https://i.pravatar.cc/150?img=6"
+  },
+  {
+    "id": 7,
+    "text": "My children now have warm jackets for school. We are so thankful.",
+    "name": "The Khan Family",
+    "role": "Recipient",
+    "image": "https://i.pravatar.cc/150?img=7"
+  },
+  {
+    "id": 8,
+    "text": "Giving back through DonateWear reminded me how small acts can create big change.",
+    "name": "David L.",
+    "role": "Donor",
+    "image": "https://i.pravatar.cc/150?img=8"
+  }
+]
