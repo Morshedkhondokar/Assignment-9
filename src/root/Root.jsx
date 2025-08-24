@@ -1,6 +1,7 @@
 
 import { Outlet } from 'react-router';
 import Navbar from '../Layout/Navbar';
+import "animate.css";
 import Aos from 'aos';
 import 'aos/dist/aos.css'; 
 import { useEffect } from 'react';
