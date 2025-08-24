@@ -1,15 +1,21 @@
 
+import { Outlet } from 'react-router';
 import Navbar from '../Layout/Navbar';
-import Home from '../pages/Home';
+import Aos from 'aos';
+import 'aos/dist/aos.css'; 
+import { useEffect } from 'react';
 
 const Root = () => {
+    useEffect(()=>{
+        Aos.init();
+    },[])
     return (
-        <div>
+        <div className='overflow-x-hidden'>
             <header>
                 <Navbar></Navbar>
             </header>
             <main>
-                <Home></Home>
+                <Outlet/>
             </main>
             <footer></footer>
             

@@ -70,7 +70,7 @@ const Navbar = () => {
       </nav>
 
       {/* Bottom Navbar */}
-      <nav className="bg-white text-gray-700 ">
+      <nav className="bg-white text-gray-700  ">
         <div className="max-w-screen-xl px-4 py-3 mx-auto">
           <ul className="flex justify-center flex-row font-medium space-x-8 text-sm">
             {links}
