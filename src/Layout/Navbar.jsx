@@ -21,12 +21,12 @@ const Navbar = () => {
         </NavLink>
       </li>
       <li>
-        <a
-          href="#"
+        <NavLink
+          to={'/blog'}
           className="font-semibold md:text-xl hover:text-blue-400 transition-colors"
         >
-          Blog
-        </a>
+          Blogs
+        </NavLink>
       </li>
       <li>
         <a

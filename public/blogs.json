@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "How Donations Change Lives",
+    "desc": "Stories of families who found hope through your contributions.",
+    "image": "https://i.pinimg.com/736x/fa/b1/1a/fab11a33cc55111fb95bbe914dbfdf23.jpg",
+    "author": "Sarah Johnson",
+    "date": "August 20, 2025"
+  },
+  {
+    "id": 2,
+    "title": "The Power of Volunteering",
+    "desc": "See how giving your time can make an incredible difference.",
+    "image": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2025/engineering-kindness-ford-volunteer-boosts-food-bank-efficiency/FeedingAmerica_Gleaners_Detroit_2.jpg",
+    "author": "David Lee",
+    "date": "August 21, 2025"
+  },
+  {
+    "id": 3,
+    "title": "Why Food Donations Matter",
+    "desc": "Nutritious meals bring smiles to children and relief to parents.",
+    "image": "https://i.pinimg.com/1200x/14/66/d9/1466d987b6936646b2ff439f862c5200.jpg",
+    "author": "Emily Brown",
+    "date": "August 22, 2025"
+  },
+  {
+    "id": 4,
+    "title": "Winter Clothing Drive Success",
+    "desc": "Thousands of warm clothes distributed to families during last winter.",
+    "image": "https://www.unicef.org/turkiye/sites/unicef.org.turkiye/files/styles/media_large_image/public/Agri_resim4.jpg.webp?itok=8_-OoIRq", 
+    "author": "Anna Smith",
+    "date": "August 23, 2025"
+  },
+  {
+    "id": 5,
+    "title": "Community Health Camp",
+    "desc": "Providing free health checkups and awareness to local communities.",
+    "image": "https://www.volunteerforever.com/wp-content/uploads/2024/11/zambia-livingstone-medical-and-community-outreach-2024-1-goeco.png", 
+    "author": "Michael Green",
+    "date": "August 24, 2025"
+  },
+  {
+    "id": 6,
+    "title": "Education for Every Child",
+    "desc": "Helping children access education with supplies and scholarships.",
+    "image": "https://i.pinimg.com/736x/e1/a4/68/e1a4681d3ec34b353b3dcc6dd26e5744.jpg", 
+    "author": "Laura White",
+    "date": "August 25, 2025"
+  }
+]
