@@ -6,6 +6,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css'; 
 import { useEffect } from 'react';
 import Footer from '../Layout/Footer';
+import ScrollToTop from '../components/ScrollToTop';
 
 const Root = () => {
     useEffect(()=>{
@@ -14,7 +15,8 @@ const Root = () => {
     return (
         <div className='overflow-x-hidden'>
             <header>
-                <Navbar></Navbar>
+                <ScrollToTop/>
+                <Navbar/>
             </header>
             <main>
                 <Outlet/>

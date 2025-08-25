@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 const CTA = () => {
   return (
     <div className="mb-18">
@@ -10,12 +12,14 @@ const CTA = () => {
           Every piece of clothing you donate brings warmth and hope to someone
           in need. Join us today in spreading kindness and changing lives.
         </p>
+        <Link to={'/donate'}>
         <button
           data-aos="zoom-in-up"  data-aos-duration="3000"
-          className="inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition"
+          className="inline-block cursor-pointer bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition"
         >
           Donate Now
         </button>
+        </Link>
       </section>
     </div>
   );

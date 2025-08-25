@@ -11,10 +11,10 @@ const DonateBanner = () => {
 
         {/* Content */}
         <div className="relative z-10 max-w-3xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+        <h1  className="text-4xl md:text-5xl font-bold mb-4 animate__animated animate__fadeInDown">
           Make a Difference Today
         </h1>
-        <p className="text-lg md:text-xl">
+        <p className="text-lg md:text-xl animate__animated animate__flipInX">
           Your contribution brings warmth and hope to families in need.
         </p>
       </div>

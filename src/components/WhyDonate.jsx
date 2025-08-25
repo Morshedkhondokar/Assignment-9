@@ -1,4 +1,5 @@
 import 'animate.css';
+import { Link } from 'react-router';
 
 const WhyDonate = () => {
   return (
@@ -78,12 +79,12 @@ const WhyDonate = () => {
             </p>
 
             {/* Donate Now Button */}
-            <a
+            <Link to={'/donate'}
               href="#"
               className="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-700 transition-colors"
             >
               Donate Now
-            </a>
+            </Link>
           </div>
         </div>
       </div>

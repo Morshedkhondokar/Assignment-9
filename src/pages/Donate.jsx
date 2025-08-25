@@ -1,4 +1,6 @@
 import DonateBanner from "../components/DonateBanner";
+import DonateForm from "../components/DonateForm";
+import DonateIntro from "../components/DonateIntro";
 import DonationOptions from "../components/DonationOptions";
 
 
@@ -7,6 +9,8 @@ const Donate = () => {
         <div>
             <DonateBanner></DonateBanner>
             <DonationOptions></DonationOptions>
+            <DonateIntro/>
+            <DonateForm></DonateForm>
         </div>
     );
 };
