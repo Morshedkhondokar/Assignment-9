@@ -5,6 +5,7 @@ import "animate.css";
 import Aos from 'aos';
 import 'aos/dist/aos.css'; 
 import { useEffect } from 'react';
+import Footer from '../Layout/Footer';
 
 const Root = () => {
     useEffect(()=>{
@@ -18,8 +19,7 @@ const Root = () => {
             <main>
                 <Outlet/>
             </main>
-            <footer></footer>
-            
+            <Footer></Footer>
         </div>
     );
 };

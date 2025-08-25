@@ -13,7 +13,6 @@ const Home = () => {
       <WhyDonate></WhyDonate>
       <CTA></CTA>
       <Testimonials></Testimonials>
-      <Footer></Footer>
     </div>
   );
 };

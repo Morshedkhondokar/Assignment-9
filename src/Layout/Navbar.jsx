@@ -1,23 +1,24 @@
 import { FcDonate } from "react-icons/fc";
+import { NavLink } from "react-router";
 
 const Navbar = () => {
   const links = (
     <>
       <li>
-        <a
-          href="#"
+        <NavLink
+          to={'/'}
           className="font-semibold md:text-xl hover:text-blue-400 transition-colors"
         >
           Home
-        </a>
+        </NavLink>
       </li>
       <li>
-        <a
-          href="#"
+        <NavLink
+          to={'/donate'}
           className="font-semibold md:text-xl hover:text-blue-400 transition-colors"
         >
           Donate
-        </a>
+        </NavLink>
       </li>
       <li>
         <a

@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Clothing Donation",
+    "desc": "Share your gently used clothes to keep someone warm and comfortable.",
+    "icon": "🧥",
+    "animation": "fade-right"
+  },
+  {
+    "title": "Food Donation",
+    "desc": "Provide healthy meals and groceries to support families struggling with hunger.",
+    "icon": "🥘",
+    "animation": "fade-left"
+  },
+  {
+    "title": "Monetary Donation",
+    "desc": "Support our mission by contributing money to fund essential programs.",
+    "icon": "💳",
+    "animation": "fade-right"
+  },
+  {
+    "title": "Medical Support",
+    "desc": "Donate for medicines, treatments, and healthcare for the underprivileged.",
+    "icon": "💊",
+    "animation": "fade-left"
+  },
+  {
+    "title": "Education Support",
+    "desc": "Help children get access to books, tuition, and educational resources.",
+    "icon": "📚",
+    "animation": "fade-right"
+  },
+  {
+    "title": "Volunteer",
+    "desc": "Offer your time and skills to help with distribution and events.",
+    "icon": "🤝",
+    "animation": "fade-left"
+  },
+  {
+    "title": "Fundraising Events",
+    "desc": "Participate in or host events that raise funds for those in need.",
+    "icon": "🎤",
+    "animation": "fade-right"
+  },
+  {
+    "title": "Awareness & Advocacy",
+    "desc": "Spread the word about our mission and encourage others to join.",
+    "icon": "📢",
+    "animation": "fade-left"
+  }
+]

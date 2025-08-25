@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 const Testimonials = () => {
   const [review, setReview] = useState([]);
 
-  fetch("/public/testimonials.json")
+  fetch("/testimonials.json")
     .then((res) => res.json())
     .then((data) => setReview(data));
 
