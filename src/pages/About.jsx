@@ -2,6 +2,7 @@ import { Outlet } from "react-router";
 import AboutBanner from "../components/AboutBanner";
 import WhoWeAre from "../components/WhoWeAre";
 import Team from "../components/Team";
+import SupportUs from "../components/SupportUs";
 
 
 const About = () => {
@@ -9,6 +10,7 @@ const About = () => {
         <div>
             <AboutBanner/>
             <WhoWeAre/>
+            <SupportUs/>
             <Team/>
         </div>
     );
