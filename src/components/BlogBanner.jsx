@@ -12,10 +12,10 @@ const BlogBanner = () => {
 
       {/* Content */}
       <div className="relative z-10 max-w-3xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+        <h1  className="text-4xl md:text-5xl font-bold mb-4 animate__animated animate__fadeInDown">
           Our Stories of Hope
         </h1>
-        <p className="text-lg md:text-xl">
+        <p className="text-lg md:text-xl animate__animated animate__fadeInUp">
           Read how your support changes lives every day.
         </p>
       </div>

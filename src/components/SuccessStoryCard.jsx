@@ -1,9 +1,10 @@
 import { Link } from "react-router";
 
 const SuccessStoryCard = ({ story }) => {
-  const { image, title, desc } = story;
+  const { image, title, desc,animation } = story;
   return (
-    <div className="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden flex flex-col md:flex-row w-full h-auto md:h-[200px]">
+    <div data-aos={animation}
+          data-aos-duration="2000" className="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden flex flex-col md:flex-row w-full h-auto md:h-[200px]">
       {/* Image Section */}
       <div className="md:w-1/3 h-64 md:h-auto flex-shrink-0">
         <img src={image} alt={title} className="w-full h-full object-cover" />

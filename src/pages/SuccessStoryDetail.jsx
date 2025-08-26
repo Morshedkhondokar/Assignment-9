@@ -22,14 +22,14 @@ const SuccessStoryDetail = () => {
       <img
         src={story.image}
         alt={story.title}
-        className="w-full h-64 object-cover rounded-lg mb-4"
+        className="w-full h-72 object-cover rounded-lg mb-4"
       />
       <p className="text-gray-700 mb-4">{story.fullArticle}</p>
       <p className="text-gray-500">{story.date}</p>
 
        {/* Back Button */}
       <button
-        onClick={() => navigate(-1)} // পেছনের page এ নেবে
+        onClick={() => navigate(-1)} 
         className="btn my-4  px-4 py-2 text-white bg-blue-600 hover:bg-blue-500 rounded-xl "
       >
         ← Back
