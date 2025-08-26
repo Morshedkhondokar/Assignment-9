@@ -1,3 +1,4 @@
+
 import { FcDonate } from "react-icons/fc";
 import { NavLink } from "react-router";
 
@@ -6,15 +7,17 @@ const Navbar = () => {
     <>
       <li>
         <NavLink
-          to={'/'}
+          to={"/"}
           className="font-semibold md:text-xl hover:text-blue-400 transition-colors"
         >
           Home
         </NavLink>
       </li>
+
+      
       <li>
         <NavLink
-          to={'/donate'}
+          to={"/donate"}
           className="font-semibold md:text-xl hover:text-blue-400 transition-colors"
         >
           Donate
@@ -22,19 +25,19 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
-          to={'/blog'}
+          to={"/blog"}
           className="font-semibold md:text-xl hover:text-blue-400 transition-colors"
         >
           Blogs
         </NavLink>
       </li>
       <li>
-        <a
-          href="#"
+        <NavLink
+          to={'/about'}
           className="font-semibold md:text-xl hover:text-blue-400 transition-colors"
         >
           About
-        </a>
+        </NavLink>
       </li>
       <li>
         <a

@@ -3,8 +3,8 @@
 const TestimonialsCard = ({ text, name, role, image }) => {
   return (
     <div>
-      <div data-aos="fade-down"
-     data-aos-duration="1000" className="bg-white w-[330px] p-6 rounded-2xl shadow hover:shadow-lg transition text-center mr-6">
+      <div 
+     data-aos-duration="1000" className="bg-white w-[330px] p-6 rounded-2xl shadow hover:shadow-lg transition transform hover:-translate-y-2 text-center mr-6">
         <img
           src={image}   
           alt={name}

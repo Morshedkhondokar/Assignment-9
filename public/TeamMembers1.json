@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Ahmed Khan",
+    "role": "Founder & Visionary",
+    "desc": "Started the organization to spread hope and kindness.",
+    "image": "https://stolenfocusbook.com/wp-content/uploads/2021/07/Johann-Headshot.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Sara Ali",
+    "role": "Operations Manager",
+    "desc": "Oversees daily operations and ensures smooth workflow.",
+    "image": "https://t3.ftcdn.net/jpg/03/59/42/28/360_F_359422840_6ZgJdJS5sOgXeDxYoFMrng55CzyVmK9j.jpg"
+  },
+  {
+    "id": 3,
+    "name": "David Lee",
+    "role": "Volunteer Coordinator",
+    "desc": "Brings together volunteers and organizes activities.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiD0y3Y6hURQ5_GTfmmT4XQ3d5-RVZbt24NQ&s"
+  },
+  {
+    "id": 4,
+    "name": "Fatima Noor",
+    "role": "Finance Director",
+    "desc": "Ensures transparency in all financial matters.",
+    "image": "https://online.maryville.edu/wp-content/uploads/sites/97/2023/09/author-brainstorms-idea.jpg"
+  },
+  {
+    "id": 5,
+    "name": "John Smith",
+    "role": "Marketing Specialist",
+    "desc": "Spreads awareness about our cause through campaigns.",
+    "image": "https://media.istockphoto.com/id/1478316046/photo/portrait-of-high-school-teacher-at-school-library.jpg?s=612x612&w=0&k=20&c=sSU4PQgVZXW6jiddn8YcB3s2F_Vge5RekkWBlMiUKuU="
+  },
+  {
+    "id": 6,
+    "name": "Aisha Rahman",
+    "role": "Community Builder",
+    "desc": "Engages with local communities to create impact.",
+    "image": "https://i.pinimg.com/474x/f1/23/57/f123573cd8d3fb97d575af346e8c7d71.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Mohammed Riaz",
+    "role": "Technical Lead",
+    "desc": "Develops and maintains our digital platforms.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4vv6CB8HQZdjGo7hiWxWdsp5iqCcxMt_i-A&s"
+  },
+  {
+    "id": 8,
+    "name": "Emily Brown",
+    "role": "Creative Writer",
+    "desc": "Shares inspiring stories of change and hope.",
+    "image": "https://headshots-inc.com/wp-content/uploads/2021/04/author-headshots-1.jpg"
+  }
+]

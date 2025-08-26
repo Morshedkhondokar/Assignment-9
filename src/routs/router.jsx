@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import Donate from "../pages/Donate";
 import Blog from "../pages/Blogs";
 import SuccessStoryDetail from "../pages/SuccessStoryDetail";
+import About from "../pages/About";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
         path: "/blog/success-story/:id", 
         element: <SuccessStoryDetail /> 
       },
+      {
+        path:'/about',
+        element:<About/>
+      }
     ],
   },
 ]);

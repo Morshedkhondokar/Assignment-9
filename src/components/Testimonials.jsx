@@ -21,7 +21,7 @@ const Testimonials = () => {
         </h2>
       </div>
       <div className="">
-        <Marquee pauseOnHover={true} speed={100}>
+        <Marquee pauseOnHover={true} speed={100} className="p-3">
           {review.map((item) => (
             <TestimonialsCard key={item.id} {...item} />
           ))}

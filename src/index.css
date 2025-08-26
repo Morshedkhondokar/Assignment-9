@@ -8,7 +8,11 @@
 
 .active{
     color: #155dfc;
-    border-top: 2px solid #155dfc;
-    border-radius: 10px;
-    padding-top: 3px;
+    /* border-top: 2px solid #155dfc;
+    border-bottom: 2px solid #155dfc; */
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 4px 6px;
+    background: #51a2ff;
+    color: white;
 }

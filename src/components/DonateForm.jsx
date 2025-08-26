@@ -1,3 +1,4 @@
+import { IoMdHeart } from "react-icons/io"; 
 const DonateForm = () => {
   const handleDonate = (e) => {
     e.preventDefault();
@@ -81,9 +82,9 @@ const DonateForm = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full cursor-pointer bg-blue-600 text-white font-semibold p-3 rounded-lg hover:bg-blue-700 transition"
+            className="flex justify-center items-center gap-3 w-full cursor-pointer bg-blue-600 text-white font-semibold p-3 rounded-lg hover:bg-blue-700 transition"
           >
-            Donate
+            <IoMdHeart className="text-xl animate__animated animate__rubberBand animate__infinite" /> Donate
           </button>
         </form>
       </div>
