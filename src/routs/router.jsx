@@ -5,11 +5,14 @@ import Donate from "../pages/Donate";
 import Blog from "../pages/Blogs";
 import SuccessStoryDetail from "../pages/SuccessStoryDetail";
 import About from "../pages/About";
+import Contact from "../pages/Contact";
+import ErrorPage from "../Layout/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage/>,
     children: [
       {
         path: "/",
@@ -30,7 +33,11 @@ const router = createBrowserRouter([
       {
         path:'/about',
         element:<About/>
-      }
+      },
+      {
+        path:'/contact',
+        element:<Contact/>
+      },
     ],
   },
 ]);

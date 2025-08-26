@@ -14,7 +14,7 @@ const AboutBanner = () => {
         <h1 className="text-4xl md:text-5xl font-bold mb-4 animate__animated animate__fadeInDown">
           About DonateWear
         </h1>
-        <p className="text-lg md:text-xl animate__animated animate__fadeInUp">
+        <p className="text-lg md:text-xl animate__animated animate__flipInX">
           At DonateWear, we believe in empowering communities through kindness and action. 
           Learn about our mission, our journey, and the passionate people working to make 
           a difference every day.

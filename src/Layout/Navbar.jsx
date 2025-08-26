@@ -40,12 +40,12 @@ const Navbar = () => {
         </NavLink>
       </li>
       <li>
-        <a
-          href="#"
+        <NavLink
+          to={'/contact'}
           className="font-semibold md:text-xl hover:text-blue-400 transition-colors"
         >
           Contact
-        </a>
+        </NavLink>
       </li>
     </>
   );
