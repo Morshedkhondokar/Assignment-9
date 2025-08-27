@@ -1,13 +1,28 @@
 import { Link } from "react-router";
 import GoogleLoginBtn from "../components/GoogleLoginBtn";
+import AuthContext from "../context/AuthContext";
+import { useContext } from "react";
 
 const Login = () => {
-    const handleSubmit = (e)=> {
-        e.preventDefault()
-        const email = e.target.email.value;
-        const password = e.target.password.value;
-        console.log(email,password)
-    }
+  const { setUser, userLogin } = useContext(AuthContext);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    console.log(email, password);
+
+    // log in user 
+    userLogin(email,password)
+     .then(result => {
+      const user = result.user ;
+      setUser(user)
+      console.log(user)
+    })
+    .catch(error =>{
+      console.log(error)
+    })
+  };
   return (
     <section className="flex flex-col pt-10 items-center justify-center min-h-screen bg-blue-50 px-6">
       <div className="bg-white w-full max-w-md rounded-2xl shadow-lg p-8">
@@ -61,7 +76,10 @@ const Login = () => {
               <input type="checkbox" name="remember" className="w-4 h-4" />{" "}
               Remember Me
             </label>
-            <Link to="/forgot-password" className="text-blue-600 hover:underline">
+            <Link
+              to="/forgot-password"
+              className="text-blue-600 hover:underline"
+            >
               Forgot Password?
             </Link>
           </div>
@@ -78,13 +96,16 @@ const Login = () => {
         {/* Register Link */}
         <p className="text-gray-600 text-center mt-6">
           Don’t have an account?{" "}
-          <Link to="/register" className="text-blue-600 font-medium hover:underline">
+          <Link
+            to="/register"
+            className="text-blue-600 font-medium hover:underline"
+          >
             Create account
           </Link>
         </p>
       </div>
       {/* login with googl */}
-      <GoogleLoginBtn/>
+      <GoogleLoginBtn />
     </section>
   );
 };

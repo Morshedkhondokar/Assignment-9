@@ -1,8 +1,27 @@
 // src/pages/Register.jsx
-import React from "react";
+import React, { useContext } from "react";
 import GoogleLoginBtn from "../components/GoogleLoginBtn";
+import AuthContext from "../context/AuthContext";
 
 const Register = () => {
+  const {setUser,createNewUser} = useContext(AuthContext);
+   const handleSubmit = (e)=> {
+        e.preventDefault()
+        const fullname = e.target.fullname.value;
+        const photoURl = e.target.photoURL.value;
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+        console.log(fullname,photoURl,email,password)
+        createNewUser(email,password)
+        .then(result => {
+          const user = result.user;
+          setUser(user)
+          console.log(user)
+        })
+        .catch(error => {
+          console.log(error);
+        })
+    }
   return (
     <section className="min-h-screen pt-10 flex  flex-col items-center justify-center bg-blue-50">
       <div className="bg-white shadow-lg rounded-2xl w-full max-w-md p-8">
@@ -15,7 +34,7 @@ const Register = () => {
         </p> */}
 
         {/* Form */}
-        <form className="mt-6 space-y-4">
+        <form onSubmit={handleSubmit} className="mt-6 space-y-4">
           {/* Name */}
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
@@ -24,8 +43,21 @@ const Register = () => {
             <input
               type="text"
               id="name"
-              name="name"
+              name="fullname"
               placeholder="Enter your full name"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          {/* pgoto url */}
+          <div>
+            <label htmlFor="photoURL" className="block text-sm font-medium text-gray-700 mb-1">
+              Photo URL
+            </label>
+            <input
+              type="text"
+              id="photoURL"
+              name="photoURL"
+              placeholder="Enter your photo URL"
               className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
@@ -53,24 +85,12 @@ const Register = () => {
               type="password"
               id="password"
               name="password"
-              placeholder="Create a password"
+              placeholder="Enter your password"
               className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
 
-          {/* Confirm Password */}
-          <div>
-            <label htmlFor="confirmPassword" className="block text-sm font-medium text-gray-700 mb-1">
-              Confirm Password
-            </label>
-            <input
-              type="password"
-              id="confirmPassword"
-              name="confirmPassword"
-              placeholder="Re-enter your password"
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-          </div>
+         
 
           {/* Terms & Conditions */}
           <div className="flex items-center">

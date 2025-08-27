@@ -1,9 +1,11 @@
 
+import { useContext } from "react";
 import { FcDonate } from "react-icons/fc";
 import { Link, NavLink } from "react-router";
+import AuthContext from "../context/AuthContext";
 
 const Navbar = () => {
-  const user = false;
+  const {user} = useContext(AuthContext)
   const links = (
     <>
       <li>
@@ -66,7 +68,10 @@ const Navbar = () => {
             {user ? (
               <>
               <Link to={'/profile'}>
-                pprofile 
+               <div className="w-[50px] flex justify-center items-center gap-2">
+                <div className="size-7 bg-white rounded-full"></div>
+                {/* <h2 className="text-white"> Profile </h2> */}
+               </div>
               </Link>
               </>
             ) : (

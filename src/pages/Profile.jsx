@@ -25,6 +25,7 @@ const logoutModalRef = useRef(null);
       <div
         className="max-w-3xl mx-auto bg-white rounded-3xl shadow-xl p-10 relative overflow-hidden"
         data-aos="zoom-in"
+        data-aos-duration="2000"
       >
         <div className="relative flex flex-col items-center">
           <img
