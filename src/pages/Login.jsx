@@ -1,23 +1,26 @@
-import { Link } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 import GoogleLoginBtn from "../components/GoogleLoginBtn";
 import AuthContext from "../context/AuthContext";
 import { useContext } from "react";
 
 const Login = () => {
   const { setUser, userLogin } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-    console.log(email, password);
-
+    // console.log(email, password);
+    const redirectPath = location.state?.from?.pathname || "/";
     // log in user 
     userLogin(email,password)
      .then(result => {
-      const user = result.user ;
+      const user = result.user;
       setUser(user)
-      console.log(user)
+       navigate(redirectPath, { replace: true });
+
     })
     .catch(error =>{
       console.log(error)

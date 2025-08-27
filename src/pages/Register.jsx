@@ -1,29 +1,43 @@
 // src/pages/Register.jsx
-import React, { useContext } from "react";
+import { useContext } from "react";
 import GoogleLoginBtn from "../components/GoogleLoginBtn";
 import AuthContext from "../context/AuthContext";
+import toast, { Toaster } from "react-hot-toast";
+import { useLocation, useNavigate } from "react-router";
 
 const Register = () => {
-  const {setUser,createNewUser} = useContext(AuthContext);
+    const navigate = useNavigate();
+  const location = useLocation();
+  const {setUser,createNewUser,updateUserProfile} = useContext(AuthContext);
    const handleSubmit = (e)=> {
         e.preventDefault()
         const fullname = e.target.fullname.value;
         const photoURl = e.target.photoURL.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log(fullname,photoURl,email,password)
+        // console.log(fullname,photoURl,email,password)
+         const redirectPath = location.state?.from?.pathname || "/";
+        if(password.length  < 6 ){
+          return toast.error("Enter at least 6 characters!")
+        }
         createNewUser(email,password)
         .then(result => {
           const user = result.user;
           setUser(user)
-          console.log(user)
+          // console.log(user)
+           navigate(redirectPath, { replace: true });
+          updateUserProfile({displayName:fullname, photoURL:photoURl})
+          .then(() => console.log('update profile'))
+          .catch((UpdateProfilErr) => console.log(UpdateProfilErr))
         })
         .catch(error => {
           console.log(error);
         })
+        
     }
   return (
     <section className="min-h-screen pt-10 flex  flex-col items-center justify-center bg-blue-50">
+      <Toaster/>
       <div className="bg-white shadow-lg rounded-2xl w-full max-w-md p-8">
         {/* Title */}
         <h2 className="text-3xl font-bold text-center text-blue-600">

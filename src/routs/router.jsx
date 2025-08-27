@@ -10,6 +10,7 @@ import ErrorPage from "../Layout/ErrorPage";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Profile from "../pages/Profile";
+import PrivateRouter from "./PrivateRouter";
 
 const router = createBrowserRouter([
   {
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/donate",
-        element: <Donate></Donate>,
+        element: <PrivateRouter><Donate/></PrivateRouter>,
       },
       {
         path: "/blog",

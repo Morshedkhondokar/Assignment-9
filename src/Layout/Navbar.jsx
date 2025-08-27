@@ -17,7 +17,8 @@ const Navbar = () => {
         </NavLink>
       </li>
 
-      <li>
+      {
+        user && <li>
         <NavLink
           to={"/donate"}
           className="font-semibold md:text-xl hover:text-blue-400 transition-colors"
@@ -25,6 +26,7 @@ const Navbar = () => {
           Donate
         </NavLink>
       </li>
+      }
       <li>
         <NavLink
           to={"/blog"}
@@ -68,9 +70,11 @@ const Navbar = () => {
             {user ? (
               <>
               <Link to={'/profile'}>
-               <div className="w-[50px] flex justify-center items-center gap-2">
-                <div className="size-7 bg-white rounded-full"></div>
-                {/* <h2 className="text-white"> Profile </h2> */}
+               <div className="w-[90px] flex  items-center gap-2 bg-white rounded-l-3xl">
+                <div className="size-7 bg-white rounded-full overflow-hidden ">
+                  <img src={user.photoURL || "https://i.pinimg.com/originals/f1/0f/f7/f10ff70a7155e5ab666bcdd1b45b726d.jpg"} className="w-7 h-7 object-cover " alt="" />
+                </div>
+                <h2 className="text-blue-600"> Profile</h2>
                </div>
               </Link>
               </>
