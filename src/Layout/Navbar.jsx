@@ -1,8 +1,9 @@
 
 import { FcDonate } from "react-icons/fc";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
+  const user = false;
   const links = (
     <>
       <li>
@@ -14,7 +15,6 @@ const Navbar = () => {
         </NavLink>
       </li>
 
-      
       <li>
         <NavLink
           to={"/donate"}
@@ -33,7 +33,7 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
-          to={'/about'}
+          to={"/about"}
           className="font-semibold md:text-xl hover:text-blue-400 transition-colors"
         >
           About
@@ -41,7 +41,7 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
-          to={'/contact'}
+          to={"/contact"}
           className="font-semibold md:text-xl hover:text-blue-400 transition-colors"
         >
           Contact
@@ -63,12 +63,20 @@ const Navbar = () => {
 
           {/* Login */}
           <div>
-            <a
-              href="#"
-              className="btn btn-sm bg-white text-blue-600 border-none hover:bg-gray-200"
-            >
-              Login
-            </a>
+            {user ? (
+              <>
+              <Link to={'/profile'}>
+                pprofile 
+              </Link>
+              </>
+            ) : (
+              <Link
+                to={"/login"}
+                className="btn btn-sm bg-white text-blue-600 border-none hover:bg-gray-200"
+              >
+                Login
+              </Link>
+            )}
           </div>
         </div>
       </nav>
