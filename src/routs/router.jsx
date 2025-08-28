@@ -11,6 +11,7 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Profile from "../pages/Profile";
 import PrivateRouter from "./PrivateRouter";
+import Loading from "../pages/Loading";
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
       {
         path:'/profile',
         element: <Profile/>
+      },
+      {
+        path:'/loading',
+        element:<Loading/>
       }
     ],
   },

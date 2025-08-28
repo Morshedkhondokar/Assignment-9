@@ -80,7 +80,7 @@ const Login = () => {
               Remember Me
             </label>
             <Link
-              to="/forgot-password"
+              to="#"
               className="text-blue-600 hover:underline"
             >
               Forgot Password?

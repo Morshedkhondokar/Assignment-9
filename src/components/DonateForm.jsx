@@ -1,7 +1,14 @@
-import { IoMdHeart } from "react-icons/io"; 
+import { useContext } from "react";
+import { IoMdHeart } from "react-icons/io";
+import AuthContext from "../context/AuthContext";
 const DonateForm = () => {
+  const { user } = useContext(AuthContext);
+
   const handleDonate = (e) => {
     e.preventDefault();
+    document.getElementById("my_modal_1").showModal();
+
+    e.target.reset()
   };
 
   return (
@@ -70,7 +77,7 @@ const DonateForm = () => {
           {/* Message */}
           <div>
             <label className="block text-gray-700 font-semibold mb-1">
-              Message 
+              Message
             </label>
             <textarea
               placeholder="Write a message"
@@ -84,10 +91,33 @@ const DonateForm = () => {
             type="submit"
             className="flex justify-center items-center gap-3 w-full cursor-pointer bg-blue-600 text-white font-semibold p-3 rounded-lg hover:bg-blue-700 transition"
           >
-            <IoMdHeart className="text-xl animate__animated animate__rubberBand animate__infinite" /> Donate
+            <IoMdHeart className="text-xl animate__animated animate__rubberBand animate__infinite" />{" "}
+            Donate
           </button>
         </form>
       </div>
+      {/* modal  */}
+      {/* Open the modal using document.getElementById('ID').showModal() method */}
+      <button className="btn hidden" id="modal_Show">
+        open modal
+      </button>
+      <dialog id="my_modal_1" className="modal">
+        <div className="modal-box">
+          <h3 className="font-bold text-2xl text-center">
+            🎉 Thank You {user?.displayName}!
+          </h3>
+          <p className="py-4 text-center text-lg">
+            {" "}
+            Your donation has been received successfully.
+          </p>
+          <div className="modal-action justify-center">
+            <form method="dialog">
+              {/* if there is a button in form, it will close the modal */}
+              <button className="btn w-[250px]">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </section>
   );
 };

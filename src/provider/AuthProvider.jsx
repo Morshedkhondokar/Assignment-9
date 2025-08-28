@@ -13,6 +13,7 @@ import { GoogleAuthProvider } from "firebase/auth";
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
   const googleProvider = new GoogleAuthProvider();
 
   // new user create
@@ -41,6 +42,7 @@ const loginWithGoogle = () => {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
+      setLoading(false)
     });
     return () => {
       unsubscribe();
@@ -55,6 +57,7 @@ const loginWithGoogle = () => {
     loginWithGoogle,
     updateUserProfile,
     logOut,
+    loading
   };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>

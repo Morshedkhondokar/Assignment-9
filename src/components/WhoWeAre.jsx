@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 const WhoWeAre = () => {
   return (
@@ -39,9 +40,11 @@ const WhoWeAre = () => {
               <li>Volunteers making an impact</li>
               <li>Trust through transparency</li>
             </ul>
-            <button className="bg-blue-600 btn text-white px-6  rounded-lg hover:bg-blue-700 transition">
-              Join Us
-            </button>
+            <Link to={"/donate"}>
+              <button className="bg-blue-600 btn text-white px-6  rounded-lg hover:bg-blue-700 transition">
+                Donate now
+              </button>
+            </Link>
           </div>
         </div>
       </section>

@@ -2,7 +2,7 @@
 import { useContext } from "react";
 import GoogleLoginBtn from "../components/GoogleLoginBtn";
 import AuthContext from "../context/AuthContext";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import { useLocation, useNavigate } from "react-router";
 
 const Register = () => {
@@ -37,7 +37,7 @@ const Register = () => {
     }
   return (
     <section className="min-h-screen pt-10 flex  flex-col items-center justify-center bg-blue-50">
-      <Toaster/>
+      
       <div className="bg-white shadow-lg rounded-2xl w-full max-w-md p-8">
         {/* Title */}
         <h2 className="text-3xl font-bold text-center text-blue-600">

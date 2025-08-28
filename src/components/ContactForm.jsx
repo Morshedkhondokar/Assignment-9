@@ -1,15 +1,23 @@
+import toast from "react-hot-toast";
+
 const ContactForm = () => {
+  const handleSubmit = (e)=> {
+    e.preventDefault()
+    toast.success("message send successfully")
+    e.target.reset()
+  }
+
   return (
     <div
       data-aos="fade-right"
       data-aos-duration="2000"
-      className="py-16 bg-gray-50"
+      className="py-16 bg-gray-50  overflow-x-hidden"
     >
-      <div className="max-w-3xl mx-auto px-6 bg-white rounded-2xl shadow-md p-8">
+      <div className="max-w-3xl mx-auto  bg-white rounded-2xl shadow-md p-8">
         <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
           Get in Touch
         </h2>
-        <form className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-4">
           {/* Name */}
           <div>
             <label
@@ -20,6 +28,8 @@ const ContactForm = () => {
             <input
               name="name"
               type="text"
+              required
+
               placeholder="Enter your name"
               className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
@@ -35,6 +45,7 @@ const ContactForm = () => {
             <input
               name="email"
               type="email"
+              required
               placeholder="Enter your email"
               className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
@@ -51,6 +62,7 @@ const ContactForm = () => {
             <input
               name="subject"
               type="text"
+              required
               placeholder="Enter the subject"
               className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
@@ -75,7 +87,7 @@ const ContactForm = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-blue-600 text-white font-semibold p-3 rounded-lg hover:bg-blue-700 transition"
+            className="w-full cursor-pointer bg-blue-600 text-white font-semibold p-3 rounded-lg hover:bg-blue-700 transition"
           >
             Send Message
           </button>
